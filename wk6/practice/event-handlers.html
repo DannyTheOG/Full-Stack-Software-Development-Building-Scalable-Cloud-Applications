@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, voluptatum vitae laudantium harum sint magnam ad aperiam quisquam, nulla consequuntur aliquid sed mollitia aspernatur odio ipsum nobis ab blanditiis vero.
+    </p>
+    <p id="para-1">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, voluptatum vitae laudantium harum sint magnam ad aperiam quisquam, nulla consequuntur aliquid sed mollitia aspernatur odio ipsum nobis ab blanditiis vero.
+    </p>
+    <button onclick="handleClickEvent()">
+        click me
+    </button>
+
+
+    <script>
+        // onload event
+        window.onload = function() {
+            alert( "the page has loaded" );
+        }
+
+        // onclick event trigger
+        function handleClickEvent() {
+            alert( "you clicked me!" );
+        }
+
+        // alternative onclick event
+        // in this instance, we assign a reference of the function to the onclick event
+        // document.querySelector( "button" ).onclick = handleClickEvent;
+
+        let para = document.getElementById( "para" );
+        para.onmouseover = function() {
+            para.style.backgroundColor = "yellow";
+        }
+
+        let newPara = document.getElementById( "para-1" );
+        newPara.addEventListener( "mouseover", function() {
+            newPara.style.fontSize = "50px";
+        } )
+
+    </script>
+</body>
+</html>

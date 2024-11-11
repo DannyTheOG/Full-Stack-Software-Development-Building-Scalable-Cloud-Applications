@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bigFont {
+            font-size: 2rem;
+        }
+
+        .red{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <p class="red">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque distinctio, dolorum accusantium ad quos incidunt, ullam numquam corporis sunt, nam voluptatum non autem impedit aspernatur quam culpa omnis sint nostrum?
+    </p>
+    <button onclick="changeBackground()">Change Background Color</button>
+
+
+    <script>
+        function changeBackground() {
+            document.querySelector( "p" ).style.backgroundColor = "lightyellow";
+
+            document.querySelector( "p" ).classList.remove( "red" );
+
+            document.querySelector( "p" ).classList.add( "bigFont" );
+        }
+    </script>
+</body>
+</html>

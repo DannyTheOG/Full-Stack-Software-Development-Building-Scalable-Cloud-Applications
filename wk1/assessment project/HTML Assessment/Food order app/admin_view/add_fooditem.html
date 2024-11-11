@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add FoodItem</title>
+</head>
+
+<body>
+    <div>
+        <h1>Add FoodItem</h1>
+        <hr>
+
+        <table>
+            <tr>
+                <th colspan="2">FoodItem Information</th>
+            </tr>
+
+            <tr>
+                <td><label for="foodItemName">FoodItem Name:</label></td>
+                <td><input type="text" name="foodItemName" id="foodItemName"></td>
+            </tr>
+
+            <tr>
+                <td><label for="foodItemDescription">FoodItem Description:</label></td>
+                <td><textarea name="foodItemDescription" id="foodItemDescription" rows="6" cols="30"></textarea></td>
+            </tr>
+
+            <tr>
+                <td><label for="isAvailable">Available?</label></td>
+                <td><input type="checkbox" name="isAvailable" id="isAvailable"></td>
+            </tr>
+
+            <tr>
+                <td><label for="isVegetarian">Vegetarian?</label></td>
+                <td><input type="checkbox" name="isVegetarian" id="isVegetarian"></td>
+            </tr>
+
+            <tr>
+                <td><label for="foodItemCategory">Category:</label></td>
+                <td>
+                    <select name="foodItemCategory" id="foodItemCategory">
+                        <option value="pasta" selected>Pasta</option>
+                        <option value="pizza">Pizza</option>
+                        <option value="sandwich">Sandwich</option>
+                        <option value="soup">Soup</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="foodItemCuisine">Cuisine:</label></td>
+                <td>
+                    <select name="foodItemCuisine" id="foodItemCuisine">
+                        <option value="italian" selected>Italian</option>
+                        <option value="asian">Asia</option>
+                        <option value="chinese">Chinese</option>
+                        <option value="african">African</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="imageURL">Image URL:</label></td>
+                <td><input type="text" name="imageURL" id="imageURL"></td>
+            </tr>
+
+            <tr>
+                <td><button type="submit">Discard</button></td>
+                <td><button type="submit">Save</button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

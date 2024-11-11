@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 class="header">Manipulating HTML</h2>
+    <h3 class="header">InnerHTML & InnerText</h3>
+    <p class="paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti reiciendis nemo quam totam officiis? Maiores, vero! Ipsam voluptate molestiae deserunt optio, eos eligendi sequi neque, minima exercitationem quisquam doloremque aut.
+    </p>
+    <p class="paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente quis quibusdam odit delectus dolorum nostrum error ratione molestiae. Doloribus voluptates eaque dolorem repudiandae fugiat fuga corrupti consequuntur saepe sit.
+    </p>
+    <div id="div">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus perferendis amet fuga, pariatur, cum culpa quisquam aspernatur sint, sapiente esse impedit possimus voluptate eos sit animi? Libero repudiandae officia expedita!
+    </div>
+
+
+
+    <script>
+        let paragraphs = document.getElementsByClassName( "paragraph" );
+        
+        for (let i = 0; i < paragraphs.length; i++) {
+            console.log( paragraphs[i] ); 
+            
+            paragraphs[i].innerText = "PARAGRAPH";
+        }
+
+        let headings = document.getElementsByClassName( "header" );
+        
+        for (let i = 0; i < headings.length; i++) {
+            // console.log( headings[i] ); 
+            
+            headings[i].innerText = "HEADINGS";
+        }
+
+        document.querySelector( "#div" ).innerHTML = "<h1>test</h1>";
+           
+
+
+    </script>
+</body>
+</html>

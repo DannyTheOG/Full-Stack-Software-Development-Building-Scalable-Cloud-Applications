@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para-1">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem laboriosam optio consequatur cupiditate. Ad officia ipsum, explicabo velit nisi autem necessitatibus eveniet. Enim harum officia delectus exercitationem odit possimus ab!
+    </p>
+    <div class="xyz">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat magni veritatis accusamus corporis sit suscipit possimus odit ut quidem adipisci incidunt quod omnis molestias perspiciatis velit, consectetur iusto eligendi obcaecati?
+    </div>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptate hic molestiae alias et maxime. Ea, enim quas sapiente eaque quidem voluptates ratione saepe quasi alias explicabo, harum nisi odio?
+    </div>
+    <section class="xyz abc">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, corporis laboriosam aliquam excepturi officia maiores consectetur dignissimos eaque laborum et non, natus ab exercitationem veritatis cupiditate quas porro odit id?
+    </section>
+
+
+    <script>
+        let para = document.getElementById("para-1");
+        console.log( para );
+
+        let xyzElements = document.getElementsByClassName( "xyz" ); // returns an array because two elements have the same class
+        console.log( xyzElements );
+        console.log( xyzElements.length );
+        console.log( xyzElements[0] );
+        console.log( xyzElements[1] );
+
+        let divElements = document.getElementsByTagName( "div" ); // returns an array because two elements have the same tag
+        console.log( divElements );
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <button id="btn">click me to display mouse function</button>
+
+        <p id="message"></p>
+        <script>
+            let btn = document.getElementById("btn");
+            let msg = document.getElementById("message");
+
+            // disable context menu when right-mouse clicked
+            btn.addEventListener("contextmenu", function () {
+                event.preventDefault();
+            });
+
+            // show the mouse event message
+            btn.onmousedown = function (event) {
+                switch (event.button) {
+                    case 0:
+                        msg.innerText = "Left mouse button clicked.";
+                        break;
+                    case 1:
+                        msg.innerText = "Middle mouse button clicked.";
+                        break;
+                    case 2:
+                        msg.innerText = "Right mouse button clicked.";
+                        break;
+                    default:
+                        msg.innerText = `Unknown mouse button code:${event.button}`;
+                }
+            };
+        </script>
+    </body>
+</html>

@@ -1,0 +1,202 @@
+/* * {
+    padding: 0px;
+    margin: 0px; 
+} */
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    font-family:  "Lato", sans-serif;
+    font-size: 15px;
+    min-height: 100vh;
+}
+
+.font-large {
+    font-size: 18px;
+}
+
+.font-white {
+    color: white;
+}
+
+.font-gray {
+    color: #757575;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50px auto 200px;
+    min-height: 100vh;
+}
+
+.header {
+    grid-row: 1;
+}
+
+h2 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 30px;
+}
+
+td {
+    padding: 12px 24px;
+}
+
+td a, a {
+    color: white;
+    text-decoration: none;
+}
+
+.main {
+    grid-row: 2;
+}
+
+.band-section {
+    max-width: 800px;
+    padding: 64px 16px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.band-section-justify {
+    text-align: justify;
+}
+
+.band-section-row {
+    display: flex;
+    justify-content: center;
+    padding: 32px 0px;
+}
+
+.band-section-card img {
+    width: 60%;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+.tour-section {
+    background-color: black;
+}
+
+.tour-section-center {
+    max-width: 800px;
+    text-align: center;
+    padding: 64px 16px;
+    margin: 0px auto;
+}
+
+.tour-months {
+    text-align: left;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+li {
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+}
+
+span {
+    margin-left: 16px;
+    padding: 0px 8px;
+}
+
+.tour-location {
+    max-width: 800px;
+    display: flex;
+    gap: 20px;
+    padding: 32px 0px;
+}
+
+.tour-location-details {
+    padding: 0.15px 16px;
+    text-align: left;
+}
+
+.tour-location img {
+    width: 100%;
+}
+
+.tour-location button {
+    margin-bottom: 16px;
+    padding: 8px 16px;
+}
+
+.contact-section {
+    max-width: 800px;
+    padding: 64px 16px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.contact-details {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    padding: 32px 0px;
+}
+
+.contact-form {
+    display: grid;
+    width: 100%;
+    gap: 10px;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 40px 40px;
+}
+
+.name input{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.email {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.message {
+    grid-column: 1 / 3;
+    grid-row: 2;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+#form-button {
+    grid-column: 2;
+}
+
+.contact-form button {
+    float: right;
+    padding: 8px;
+    width: 40%;
+    margin: 8px 0px;
+}
+
+.location-section img {
+    width: 100%;
+}
+
+.footer {
+    grid-row: 3;
+    padding: 64px 16px;
+    text-align: center;
+}

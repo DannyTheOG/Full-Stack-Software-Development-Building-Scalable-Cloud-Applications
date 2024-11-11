@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=a, initial-scale=1.0">
+    <title>Advanced Selectors</title>
+    <style>
+        /* combining attribute and tag selector */
+        a[target] {
+            color: crimson;
+            text-decoration: none;
+        }
+
+        /* combining attribute and value match selector */
+        [target="_blank"] {
+            font-size: 1.5em;
+        }
+
+        /* combining tag, attribute and value match selector */
+        a[target="_parent"] {
+            color: darkgreen;
+            font-style: oblique;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My first HTML with CSS</h1>
+
+    <a href="https://www.google.com">Google</a>
+    <br>
+
+    <a href="https://www.youtube.com" target="_blank">Youtube</a>
+    <br>
+
+    <a href="https://www.facebook.com" target="_blank">Facebook</a>
+    <br>
+
+    <a href="https://www.postman.com" target="_parent">Postman</a>
+</body>
+
+</html>

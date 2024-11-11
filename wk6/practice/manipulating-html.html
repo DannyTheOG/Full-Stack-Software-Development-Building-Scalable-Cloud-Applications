@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, qui consequatur corporis dignissimos quas fuga sequi cupiditate, delectus iusto nobis assumenda animi. Cupiditate id reprehenderit explicabo pariatur eligendi, accusantium voluptatem!
+    </p>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, eos at consequatur quaerat unde repellat nam natus consequuntur fuga quam molestias expedita pariatur quas eaque veritatis exercitationem sit cum voluptate.
+    </p>
+
+
+
+    <script>
+        setTimeout( function() {
+            document.querySelector( 'p:first-of-type' ).innerHTML = "<span>new paragraph</span>";
+
+            document.querySelector( 'p:last-of-type' ).innerText = "<span>new paragraph</span>"
+        }, 10000 )
+    </script>
+</body>
+</html>

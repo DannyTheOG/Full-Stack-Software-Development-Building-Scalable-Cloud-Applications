@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+</head>
+
+<body>
+    <div>
+        <h1>Add Product</h1>
+        <hr>
+
+        <table>
+            <tr>
+                <th colspan="2">Product Information</th>
+            </tr>
+            <tr>
+                <td><label for="productName">Product Name:</label></td>
+                <td><input type="text" id="productName"></td>
+            </tr>
+
+            <tr>
+                <td><label for="productPrice">Product Price:</label></td>
+                <td><input type="text" id="productPrice"></td>
+            </tr>
+
+            <tr>
+                <td><label for="productDescription">Product Description:</label></td>
+                <td><textarea id="productDescription" cols="35" rows="10"></textarea></td>
+            </tr>
+
+            <tr>
+                <td><label for="available">Available</label></td>
+                <td><input type="checkbox" id="available"></td>
+            </tr>
+
+            <tr>
+                <td><label for="productCategory">Category</label></td>
+                <td>
+                    <select id="productCategory" multiple aria-colspan="20">
+                        <option value="">Clothing</option>
+                        <option value="">Shoes</option>
+                        <option value="">Bags</option>
+                        <option value="">Electronics</option>
+                        <option value="">Food</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="productImage">Product Image</label></td>
+                <td><input type="file" id="productImage"></td>
+            </tr>
+
+            <tr>
+                <td><button type="submit">Discard</button></td>
+                <td><button type="submit">Save</button></td>
+            </tr>
+        </table>
+
+        <br><br>
+        <a href="admin_page.html">Back to home</a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+[
+    {
+        "name": "red bull",
+        "description": "energy drink",
+        "price": 10,
+        "rating": {
+            "min": 2,
+            "max": 5
+        }
+    },
+    {
+        "name": "bel aqua",
+        "description": "bottled water",
+        "price": 5,
+        "rating": {
+            "min": 4.5,
+            "max": 5
+        }
+    },
+    {
+        "name": "twist",
+        "description": "chocolate pastry",
+        "price": 3,
+        "rating": {
+            "min": 3,
+            "max": 4.8
+        }
+    }
+]

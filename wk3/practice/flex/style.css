@@ -1,0 +1,45 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+.content-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.card {
+    padding: 10px;
+    margin: 2rem;
+    box-shadow: 0 0 10px gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-section .card img {
+    width: 100%;
+    height: auto;
+}
+
+.content-section .card p {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 760px) {
+    .content-section {
+        flex-direction: column;
+    }
+}

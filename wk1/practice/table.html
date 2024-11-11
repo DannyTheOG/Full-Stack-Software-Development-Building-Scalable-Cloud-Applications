@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Weather Report</h1>
+    <hr />
+
+    <table>
+        <thead>
+            <tr>
+                <th>City</th>
+                <th>Rainfall</th>
+                <th>Min Temperature</th>
+                <th>Max Temperature</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Accra</td>
+                <td>5 mm</td>
+                <td>24 C</td>
+                <td>30 C</td>
+            </tr>
+            <tr>
+                <td>Freetown</td>
+                <td>9 mm</td>
+                <td>28 C</td>
+                <td>36 C</td>
+            </tr>
+            <tr>
+                <td>Lagos</td>
+                <td>7 mm</td>
+                <td>20 C</td>
+                <td>25 C</td>
+            </tr>
+            <tr>
+                <td>Monrovia</td>
+                <td>12 mm</td>
+                <td>24 C</td>
+                <td>30 C</td>
+            </tr>
+            <tr>
+                <td>Dakar</td>
+                <td>5 mm</td>
+                <td>12 C</td>
+                <td>20 C</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <table>
+        <tr>
+            <th colspan="5">customer</th>
+        </tr>
+        <tr>
+            <th>s no</th>
+            <th>name</th>
+            <th>cost</th>
+            <th>aua</th>
+            <th>tac</th>
+        </tr>
+        <tr>
+            <th rowspan="2">1</th>
+            <th>book</th>
+            <th>500</th>
+            <th>2</th>
+            <th>50</th>
+        </tr>
+        <tr>
+            <td colspan="3"><b>total</b></td>
+            <td>1050</td>
+        </tr>
+    </table>
+</body>
+
+</html>

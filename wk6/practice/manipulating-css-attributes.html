@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://www.shutterstock.com/image-vector/cute-funny-baby-panda-hanging-600nw-334228436.jpg">
+    <button onclick="changeImage()">Change Image</button>
+
+
+    <script>
+        function changeImage() {
+            // document.querySelector( "img" ).src = "https://cdn.pixabay.com/photo/2014/09/12/10/10/cube-442544_640.jpg";
+
+           console.log( document.querySelector( "img" ).hasAttribute( "src" ) );
+
+           console.log( document.querySelector( "img" ).hasAttribute( "alt" ) );
+
+           console.log( document.querySelector( "img" ).getAttribute( "src" ) );
+
+           document.querySelector( "img" ).setAttribute( "src",  "https://cdn.pixabay.com/photo/2014/09/12/10/10/cube-442544_640.jpg" );
+
+           document.querySelector( "img" ).setAttribute( "alt",  "dice" );
+        }
+    </script>
+</body>
+</html>

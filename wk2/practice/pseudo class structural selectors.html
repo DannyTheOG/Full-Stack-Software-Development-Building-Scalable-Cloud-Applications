@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class Structural Selectors</title>
+    <style>
+        /* this means every first letter of a <p> tag */
+        p:first-letter {
+            font-size: 2em;
+        }
+
+        :first-line {
+            color: olive;
+        }
+
+        /* universal selector */
+        /* * {
+            border: 1px solid black;
+        } */
+
+        /* this means every first element which is also a <p> tag */
+        p:first-child {
+            color: blue;
+        }
+
+        /* this means every first element within a <p> tag */
+        p :first-child {
+            color: crimson;
+        }
+
+        /* 4th child within the unordered list */
+        ul li:nth-child(2) {
+            font-size: 2.0em;
+        }
+
+        /* 6th element within the same set of elements */
+        ul li:nth-of-type(6) {
+            color: brown;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My first HTML with CSS</h1>
+
+    <div>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe voluptates sapiente amet iste quidem
+            recusandae in quam dicta corporis similique ex fugit, esse quo harum laudantium doloribus sequi explicabo
+            nesciunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ut reiciendis repellendus, magnam
+            ab nesciunt, veritatis, porro praesentium voluptates nemo ipsa hic. Qui minus dolore sunt iste tempora,
+            possimus repudiandae?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti quia dolorem, quibusdam ea earum ducimus
+            quaerat saepe repellat adipisci modi cum quod magni accusamus, dolore, eum voluptas magnam rem
+            reprehenderit?
+        </p>
+    </div>
+
+    <p class="intro">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil doloribus corporis accusamus rerum quia natus
+        <a href="https://www.youtube.com" target="_blank">Youtube</a> Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Laudantium porro expedita quae quasi doloremque. Eum repellendus hic quas repellat quibusdam, ab ratione
+        ipsam facilis corrupti, laudantium dolores itaque! Ex, distinctio.
+        perferendis exercitationem error. Odio earum aliquid explicabo iste architecto labore, impedit ipsum reiciendis
+        itaque voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia odit sit distinctio sapiente
+        fugit eum aut? Error repellat vel voluptates praesentium, voluptatibus earum officiis qui mollitia deserunt,
+        maxime autem nam.
+    </p>
+
+    <p class="intro">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, hic minus iste odio, incidunt placea Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Ad, sint facere. Cum facere mollitia eaque quo, omnis veniam
+        consectetur nulla iusto rerum harum, distinctio ratione dolores hic laudantium corporis nobis.
+        possimus quod ratione eaque accusamus a fugiat. Accusamus voluptatem, sit porro similique velit molestiae in?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem ab at, praesentium quasi tempore cum ea
+        aliquid incidunt sequi temporibus voluptas sed suscipit ipsa dicta vel commodi, cupiditate magnam quia.
+    </p>
+
+    <div class="intro">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque iste culpa eos, dolorum autem ipsa explicabo
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        assumenda repellendus magnam ab, dicta dolores iure a. Doloremque ipsam qui earum quo dolorum? Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Perferendis eius ducimus accusamus laboriosam, maiores, numquam
+        laudantium natus quo ea vero ex aspernatur itaque quisquam! Minus quos quam facere sunt ullam.
+    </div>
+
+    <p>
+        <span>Test span</span><br>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, assumenda aperiam? Optio obcaecati nihil
+        consequuntur veniam, error in voluptatibus veritatis blanditiis ab fuga adipisci aliquam inventore beatae
+        molestias doloremque sit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quasi molestias nisi
+        magnam similique? Voluptates commodi illo unde, asperiores reprehenderit odit deserunt cum vitae quibusdam
+        voluptatum. Ea dolores sequi quibusdam!
+    </p>
+
+    <ul>
+        <li>orange</li>
+        <li>coconut</li>
+        <li>banana</li>
+        <li>apple</li>
+        <li>pawpaw</li>
+        <li>watermelon</li>
+        <li>mango</li>
+    </ul>
+
+</body>
+
+</html>
