@@ -16,6 +16,10 @@ body{
   box-shadow: 2px 0px 8px gray;
 }
 
+.section p {
+    text-align: center;
+}
+
 h1, h2{
     text-align: center;
 }
