@@ -73,6 +73,7 @@ function saveNewProject() {
   // console.log( projects ) 
 
   // Load the projects after adding the new project
+  document.getElementById( "projects" ).innerHTML = "";
   loadProjects();
 
   // Clear the values of the New Project Details Form after adding the new project
