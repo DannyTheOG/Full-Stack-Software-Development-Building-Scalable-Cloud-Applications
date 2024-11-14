@@ -1,0 +1,35 @@
+/* WRITE YOUR CSS CODE HERE */
+
+table {
+    margin: auto;
+}
+
+td {
+    width: 70px;
+    height: 50px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: gray;
+}
+
+td:hover {
+    background-color: #c8c8c8;
+}
+
+#display {
+    height: 70px;
+    background-color: black;
+    color: white;
+    text-align: right;
+    font-size: 1.7rem;
+}
+
+#C {
+    background-color: red;
+}
+
+#equal {
+    background-color: green;
+}
