@@ -8,24 +8,33 @@
     getters and setters methods are used to retrieve and update the restricted attributes of the objects.
 */
 class Person {
+    #gender // private
     constructor( name, age ) {
-        let _name = name;
-        let _age = age;
+        let name = name; //public
+        let _age = age; //protected
 
-        this.getName = function() {
-            return _name;
-        }
+        // this.getName = function() {
+        //     return _name;
+        // }
 
-        this.setName = function( newName ) {
-            _name = newName;
-        }
-    }   
+        // this.setName = function( newName ) {
+        //     _name = newName;
+        // }
+    }
+
+    get name() {
+        return _name;
+    }
+
+    set name( newName ) {
+        this.name = newName;
+    }
+
 }
 
 
 let john = new Person( "John Moore", 78 );
 john.name = "new name";
-console.log( john.name );
+console.log( john.name() );
 
-console.log( john.getName )
 
