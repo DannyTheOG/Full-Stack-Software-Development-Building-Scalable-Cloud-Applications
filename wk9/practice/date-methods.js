@@ -17,3 +17,4 @@ console.log(  (new Date()).getDay() ) // Sunday is index 0
 // setters
 console.log( today.setDate( 7 ) )
 console.log( today.setFullYear( 2018 ) )
+
