@@ -1,9 +1,13 @@
 {
     "cSpell.words": [
+        "currentvideo",
+        "filteredvideos",
         "Fintech",
         "firstname",
         "fullname",
         "lastname",
-        "mobilenumber"
-    ],
+        "mobilenumber",
+        "playvideo",
+        "Unshuffle"
+    ]
 }
