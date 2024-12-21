@@ -19,7 +19,7 @@ class Stack {
   // Pop element from the stack
   pop() {
     // Check if the stack is empty - If empty, return "Underflow"
-    // Remove and return the last element of the items array
+    // Remove and return the last element o5f the items array
     if( this.isEmpty() ) return "Underflow";
     else return this.items.pop();
   }
