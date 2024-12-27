@@ -20,11 +20,11 @@ weeklyRota.forEach( function( item ) {
 let result = weeklyRota.filter( function( item ) {
     return item.hours >= 6
 } )
-console.log( result )
+console.log("filter: ", result )
 
 // map
 let overtime = weeklyRota.map( function( item ) {
     item.hours += 2
     return item
 } )
-console.log( overtime )
+console.log("map: ",  overtime )

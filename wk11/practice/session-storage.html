@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Storage</title>
+</head>
+<body>
+    enter your favorite sport: <input type = "text" id = "favorite-sport">
+
+    <script>
+        let favoriteSport;
+
+        document.getElementById( "favorite-sport" ).addEventListener( "input", function( event ) {
+            favoriteSport = event.target.value;
+            saveFavorites();
+        });
+
+        function saveFavorites() {
+            // sessionStorage only stores strings and data is lost when the browser is closed
+            sessionStorage.setItem( "favorites", JSON.stringify( 
+                {
+                    "favoriteSport": favoriteSport, 
+                } 
+            ));
+        };
+    </script>
+</body>
+</html>

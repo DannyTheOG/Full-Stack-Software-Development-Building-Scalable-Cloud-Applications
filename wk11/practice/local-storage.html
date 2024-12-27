@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    enter your favorite color: <input type = "text" id = "favorite-color">
+    enter your favorite city: <input type = "text" id = "favorite-city">
+
+    <script>
+        let favoriteColor;
+        let favoriteCity;
+
+        document.getElementById( "favorite-color" ).addEventListener( "input", function( event ) {
+            favoriteColor = event.target.value;
+            document.body.style.backgroundColor = favoriteColor;
+            saveFavorites();
+        });
+
+        document.getElementById( "favorite-city" ).addEventListener( "input", function( event ) {
+            favoriteCity = event.target.value;
+            saveFavorites();
+        });
+
+        function saveFavorites() {
+            // localStorage only stores strings and data is still available after the browser is closed
+            localStorage.setItem( "favorites", JSON.stringify( 
+                {
+                    "favoriteCity": favoriteCity, 
+                    "favoriteColor": favoriteColor,
+                } 
+            ));
+        };
+    </script>
+</body>
+</html>
