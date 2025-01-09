@@ -1,4 +1,4 @@
-function myComponent( props ) {
+function MyComponent( props ) {
     return (
         <div>
             <h1>{props.title}</h1>
@@ -7,4 +7,4 @@ function myComponent( props ) {
     );
 }
 
-export default myComponent;
+export default MyComponent;
