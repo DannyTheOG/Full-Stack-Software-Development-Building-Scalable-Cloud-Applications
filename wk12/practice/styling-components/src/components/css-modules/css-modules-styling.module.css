@@ -1,0 +1,15 @@
+.my-component  {
+    background-color: green; 
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.title  {
+    background-color: burlywood; 
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}

@@ -1,0 +1,13 @@
+To run the Bootstrap using npm example, we first have to install the latest version of the "react-bootstrap" and "bootstrap" package using npm
+
+
+1. stop the current react app execution( running ) in your terminal using Ctrl + C keys
+
+2. install the package using the following command on your terminal:
+    {{ npm install bootstrap }}
+
+3. in the index.js file, add the following import statement:
+    import 'bootstrap/dist/css/bootstrap.min.css'
+
+4. start the react app execution again in your terminal using the command:
+    {{ npm start }}

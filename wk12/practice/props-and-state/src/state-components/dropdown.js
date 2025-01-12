@@ -30,7 +30,7 @@ function Dropdown() {
             >
                 {countriesList}
             </select>
-            <p>your country code is: +({selectOption})</p>
+            <p>your country code is: +( {selectOption} )</p>
         </div>
     );
 }
