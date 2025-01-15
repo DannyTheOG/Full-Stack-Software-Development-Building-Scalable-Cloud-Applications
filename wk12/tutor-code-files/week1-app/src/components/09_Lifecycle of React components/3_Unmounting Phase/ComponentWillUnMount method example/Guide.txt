@@ -1,0 +1,8 @@
+To understand the unmounting phase, we need to go in Dev tools by clicking on inspect option, then click on Components.
+
+For FunctionalComponentExample, select the "MyComponent" and you will value of the hook State as "false". 
+As its false so the component is not mounted and you dont see anything on the webpage.
+Make it true by checking the State value.
+The webpage will be updated when the component gets mounted.
+Make it false again by unchecking the State value.
+The webpage will be updated when the component gets unmounted.

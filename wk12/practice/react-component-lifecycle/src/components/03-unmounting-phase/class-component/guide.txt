@@ -1,0 +1,7 @@
+NB: componentWillUnmount() is a react class component lifecycle method called just before the component is removed from the DOM.
+
+to understand the unmounting phase, we need to go in Dev Tools by clicking on inspect option, then click on components.
+
+for ClassComponentExample, select the 'UnmountingPhase1' and you will see value of the state 'deleteSampleComponent' as 'true'; make it false by unchecking it.
+
+so the 'SampleComponent' will get deleted and you will see alert message while it is getting unmounted.

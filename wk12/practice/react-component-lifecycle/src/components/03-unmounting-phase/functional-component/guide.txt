@@ -1,0 +1,11 @@
+NB: componentWillUnmount() is a react class component lifecycle method called just before the component is removed from the DOM.
+
+to understand the unmounting phase, we need to go in Dev Tools by clicking on inspect option, then click on components.
+
+for FunctionalComponentExample, select the 'UnmountingPhase2' and you will change the value of the hook State as 'false'
+
+as it is false so the component is not mounted and you don't see anything on the webpage
+
+make it true by checking the State value, the webpage will be updated when the component gets mounted
+
+make it false again by unchecking the State value, the webpage will be updated when the component gets unmounted

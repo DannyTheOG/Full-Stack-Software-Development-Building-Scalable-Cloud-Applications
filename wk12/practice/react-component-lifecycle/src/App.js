@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import MountingPhase from "./components/01-mounting-phase/mounting-phase";
+import UpdatingPhase from "./components/02-updating-phase/updating-phase";
+import UnmountingPhase1 from "./components/03-unmounting-phase/class-component/unmounting-phase";
+import UnmountingPhase2 from "./components/03-unmounting-phase/functional-component/unmounting-phase";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <MountingPhase />
+            <hr />
+            <UnmountingPhase1 />
+            <UnmountingPhase2 />
+            <hr />
+            <UpdatingPhase value = {2} />
+            <UpdatingPhase value = {3} />
+        </>
+    );
 }
 
 export default App;

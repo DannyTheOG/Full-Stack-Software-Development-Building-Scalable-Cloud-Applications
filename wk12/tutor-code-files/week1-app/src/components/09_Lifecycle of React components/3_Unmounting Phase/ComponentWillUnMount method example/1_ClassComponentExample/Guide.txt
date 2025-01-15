@@ -1,0 +1,4 @@
+To understand the unmounting phase, we need to go in Dev tools by clicking on inspect option, then click on Components.
+
+For ClassComponentExample, select the "MyComponent" and you will see value of the state "deleteSampleComponent" as "true". Make it false by unchecking it.
+So the "SampleComponent" will get deleted and you will see alert message while its getting unmounted.
