@@ -4,6 +4,9 @@ import Sett from './sets/set';
 import Objectt from './objects/object';
 import StateManagedObject from './objects/state-managed-object';
 import ArrayOfObject from './objects/array-of-objects';
+import Table from './tables/table';
+import Dropdown from './dropdown/dropdown';
+import Radio from './radios/radio';
 
 function App() {
   return (
@@ -13,7 +16,10 @@ function App() {
       <Sett /><hr />
       <Objectt /><hr />
       <StateManagedObject /><hr />
-      <ArrayOfObject />
+      <ArrayOfObject /><hr />
+      <Dropdown /><hr />
+      <Radio /><hr />
+      <Table /><hr />
     </>
   );
 }

@@ -1,0 +1,17 @@
+We have provided the code files with reference to the code provided in the decks.
+
+Kindly follow the below steps to execute the code -
+
+1. Download the zip folder and extract the week2-app folder.
+
+2. Open a terminal and navigate to week2-app folder.
+
+3. Run the following command to install all dependencies-
+
+npm install
+
+4. Execute the app using the following command-
+
+npm start
+
+5. The App.js file has code for each of the examples which you have to uncomment to run the example.
