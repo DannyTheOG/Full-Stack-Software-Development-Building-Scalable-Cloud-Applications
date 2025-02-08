@@ -1,0 +1,17 @@
+npm install redux react-redux
+
+in index.js,
+  import createStore from redux
+  import Provider from react-redux
+  wrap the Provider around root App component
+  assign the store property your reducer component
+
+
+in counterReducer.js,
+  set the initial states of your project
+  define your action and how they impact your component's states
+
+
+in counter.js,
+  useSelector returns the states in our project to the component
+  useDispatch sends actions from the component to update the states in the counterReducer( store )

@@ -1,0 +1,3 @@
+npm install react-router react-router-dom { for some of the react hooks and routers}
+
+npm install bootstrap react-bootstrap react-router-bootstrap { for bootstrapping }
