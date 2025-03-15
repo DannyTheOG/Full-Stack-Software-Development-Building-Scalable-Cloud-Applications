@@ -1,0 +1,21 @@
+1.  create an empty dir
+
+2.  run npm init or npm init -y to initialize your package.json
+
+3.  run npm install typescript to add TS
+
+4.  run ./node_modules/.bin/tsc --init to create the tsconfig.json file
+
+5.  you can edit the "rootDir" for path of the source of your TS files e.g. "./src"
+
+6.  you can also edit "outDir" for path of the output of the JS files e.g. "./dist"
+
+7.  edit the "script" tag in package.json, add "build": "tsc" to run the TS compiiler.
+
+8. create your src directory and create your .ts file
+
+9. run npm run build to execute the "build" tag in your package.json file
+
+10. your .js file will be present in your dist directory as specified
+
+11 run node filename/location to execute your .js file
