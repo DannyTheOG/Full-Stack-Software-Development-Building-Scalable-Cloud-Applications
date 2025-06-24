@@ -1,0 +1,9 @@
+click the 'run and debug' tab in vscode
+
+create a launch.json file
+
+specify the file path e.g. '${workspace}/debug-example/index.js
+
+launch debug on the index.js file.
+
+see the difference with/without the 'delete' line of code

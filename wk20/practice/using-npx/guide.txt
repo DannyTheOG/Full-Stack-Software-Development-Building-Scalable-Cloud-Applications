@@ -1,0 +1,4 @@
+npx <package-name> <command-line-arguments-for-the-tool>
+
+e.g.  npx gitignore node
+      npx express-generator .
