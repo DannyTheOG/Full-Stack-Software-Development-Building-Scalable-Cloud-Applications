@@ -1,0 +1,122 @@
+[
+    {
+        "_id": "1",
+        "name": "Smartphone",
+        "description": "High-end smartphone",
+        "price": 799.99,
+        "quantityInStock": 50,
+        "image": "https://example.com/smartphone.jpg",
+        "categoryId": "1",
+        "isActive": true,
+        "createdTs": "2023-08-03T12:00:00Z",
+        "updatedTs": "2023-08-03T12:00:00Z"
+    },
+    {
+        "_id": "2",
+        "name": "Laptop",
+        "description": "Powerful laptop for productivity",
+        "price": 1299.99,
+        "quantityInStock": 20,
+        "image": "https://example.com/laptop.jpg",
+        "categoryId": "1",
+        "isActive": true,
+        "createdTs": "2023-08-03T14:00:00Z",
+        "updatedTs": "2023-08-03T14:00:00Z"
+    },
+    {
+        "_id": "3",
+        "name": "Science Fiction Book",
+        "description": "A thrilling science fiction novel",
+        "price": 19.99,
+        "quantityInStock": 100,
+        "image": "https://example.com/science_fiction_book.jpg",
+        "categoryId": "3",
+        "isActive": true,
+        "createdTs": "2023-08-03T16:00:00Z",
+        "updatedTs": "2023-08-03T16:00:00Z"
+    },
+    {
+        "_id": "4",
+        "name": "LED TV",
+        "description": "High-definition LED TV",
+        "price": 599.99,
+        "quantityInStock": 30,
+        "image": "https://example.com/led_tv.jpg",
+        "categoryId": "1",
+        "isActive": true,
+        "createdTs": "2023-08-03T18:00:00Z",
+        "updatedTs": "2023-08-03T18:00:00Z"
+    },
+    {
+        "_id": "5",
+        "name": "Teddy Bear",
+        "description": "Soft and cuddly teddy bear",
+        "price": 9.99,
+        "quantityInStock": 200,
+        "image": "https://example.com/teddy_bear.jpg",
+        "categoryId": "5",
+        "isActive": true,
+        "createdTs": "2023-08-03T19:30:00Z",
+        "updatedTs": "2023-08-03T19:30:00Z"
+    },
+    {
+        "_id": "6",
+        "name": "Soccer Ball",
+        "description": "Standard size soccer ball",
+        "price": 14.99,
+        "quantityInStock": 50,
+        "image": "https://example.com/soccer_ball.jpg",
+        "categoryId": "6",
+        "isActive": true,
+        "createdTs": "2023-08-03T20:30:00Z",
+        "updatedTs": "2023-08-03T20:30:00Z"
+    },
+    {
+        "_id": "7",
+        "name": "Lipstick",
+        "description": "Long-lasting lipstick",
+        "price": 12.99,
+        "quantityInStock": 100,
+        "image": "https://example.com/lipstick.jpg",
+        "categoryId": "7",
+        "isActive": true,
+        "createdTs": "2023-08-03T21:00:00Z",
+        "updatedTs": "2023-08-03T21:00:00Z"
+    },
+    {
+        "_id": "8",
+        "name": "Dining Table",
+        "description": "Elegant dining table",
+        "price": 499.99,
+        "quantityInStock": 10,
+        "image": "https://example.com/dining_table.jpg",
+        "categoryId": "8",
+        "isActive": true,
+        "createdTs": "2023-08-03T22:00:00Z",
+        "updatedTs": "2023-08-03T22:00:00Z"
+    },
+    {
+        "_id": "9",
+        "name": "Necklace",
+        "description": "Stylish necklace",
+        "price": 29.99,
+        "quantityInStock": 50,
+        "image": "https://example.com/necklace.jpg",
+        "categoryId": "9",
+        "isActive": true,
+        "createdTs": "2023-08-03T23:00:00Z",
+        "updatedTs": "2023-08-03T23:00:00Z"
+    },
+    {
+        "_id": "10",
+        "name": "Coffee Maker",
+        "description": "Automatic coffee maker",
+        "price": 79.99,
+        "quantityInStock": 20,
+        "image": "https://example.com/coffee_maker.jpg",
+        "categoryId": "10",
+        "isActive": true,
+        "createdTs": "2023-08-03T23:30:00Z",
+        "updatedTs": "2023-08-03T23:30:00Z"
+    }
+]
