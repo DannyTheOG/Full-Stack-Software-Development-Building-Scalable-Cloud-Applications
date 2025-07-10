@@ -1,0 +1,11 @@
+MongoDB uses Sharding to meet the growing demands for data storage on multiple machines( horizontal scaling)
+
+In sharding process, horizontal scaling, also called scaling out, is a method that is used to address the need for increased capacity and performance.
+
+
+
+benefits include:
+  partition the data
+  increase capacity
+  increase write speed
+  auto balancing

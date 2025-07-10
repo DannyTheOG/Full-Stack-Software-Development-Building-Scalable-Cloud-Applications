@@ -1,0 +1,15 @@
+To delete all documents from a collection, pass an empty filter document {} to the db.collection.deleteMany() method.
+
+  db.users.deleteMany({})
+
+  db.users.deleteOne({ "email": "janedoe@gmail.com" })
+
+
+
+To delete a collection, use the db.collection.drop() method.
+
+  db.users.drop()
+
+
+
+To delete an entire database, use the db.dropDatabase() method.

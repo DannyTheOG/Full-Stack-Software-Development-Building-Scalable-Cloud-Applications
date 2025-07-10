@@ -1,0 +1,28 @@
+db.collection.insertOne() inserts a single document into a collection.
+
+  db.users.insertOne( {
+    "name": "jane doe",
+    "age": 34,
+    "email": "janedoe@gmail.com"
+  })
+
+
+
+db.collection.insertMany() can insert multiple documents into a collection. Pass an array of documents to the method.
+
+  db.users.insertMany( [
+    {
+      "name": "jane doe",
+      "age": 34,
+      "email": "janedoe@gmail.com"
+    },
+    {
+      "name": "max payne",
+      "age": 25,
+      "email": "maxpayne@gmail.com"
+    },
+
+  ])
+
+
+

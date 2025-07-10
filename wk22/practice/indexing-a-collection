@@ -1,0 +1,5 @@
+a collection of documents can be indexed by any field
+
+the _id field is indexed by default for all collections
+
+  db.users.createIndex({ "name": 1})

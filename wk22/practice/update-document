@@ -1,0 +1,6 @@
+To update a document, MongoDB provides update operators, such as $set, to modify field values.
+
+  db.users.updateOne({ "name": "jane doe" }, { $set: { "email": "janed@gmail.com" } })
+
+  db.users.updateMany({ "name": "jane doe" }, { $set: { "email": "janed@gmail.com" } })
+

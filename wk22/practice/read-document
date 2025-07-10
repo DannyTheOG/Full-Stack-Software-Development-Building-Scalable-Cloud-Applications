@@ -1,0 +1,12 @@
+To retrieve the inserted documents, query the collection.
+
+  db.users.find( {} )
+
+  db.users.find( { "name": "jane doe" }) OR db.users.find( { "name": { $eq: "jane doe" } } )
+
+  db.users.find( { "age": { $gt: 30 } } )
+
+  db.users.find({}).sort( { "age": -1} ).limit( 4 ) // sort age in descending order with a limit result of 4
+
+  db.users.find({}).sort( { "age": 1} ).skip( 4 ) // sort age in ascending order with and skip first 2 documents
+

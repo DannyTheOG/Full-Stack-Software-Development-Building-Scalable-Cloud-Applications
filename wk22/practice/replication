@@ -1,0 +1,8 @@
+Replication is a process of maintaining multiple copies of the same data in different servers
+
+In MongoDB, a replica set is a group of servers that maintain the same dataset
+
+While replication provides many benefits, there's also some concerns to keep in mind when configuring and managing replica sets.
+
+The primary node is responsible for write operations, while the secondary nodes are read-only replicas that provide data redundancy and assist with read scaling.
+
