@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const fs = require("fs");
 
 // Connect to MongoDB
-mongoose.connect("<YOUR_CONNECTION_STRING>", {
+mongoose.connect("mongodb+srv://DannyTheOG:P@$s1234@cluster0.xivlcdu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
