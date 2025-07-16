@@ -1,0 +1,49 @@
+1.  db.users.find({username: "jane_smith"})
+
+2.  db.users.find({email: 'john.doe@example.com'})
+
+3.  db.user.find({ isActive: true })
+
+4.  db.users.find({isAdmin: true})
+
+5.  db.users.find({ createdTs: {$gte: new Date('2025-01-01'), $lte:  new Date('2026-01-01')}})
+
+6.  db.users.find( {fullname: {$regex: 'jane', $options: 'i'}}) // 'i' means case insensitivity
+
+7.  db.users.find( {password: 'janesm'})
+
+8.  db.usersessions.find( {_id: "1"})
+
+9.  db.usersessions.find( {userId: "1"})
+
+10. db.usersessions.find( {sessionToken: "random_session_token_here"})
+
+11. db.orders.find( {_id: '10'})
+
+12. db.orders.find( {userId: '10'})
+
+13. db.orders.find( {orderTotalPrice: {$gt: 1000}})
+
+14. db.orders.find({'products.8': {$exists: true}}) // 'products.8' means product with _id '8'
+
+15.  db.orders.find({ isActive: true })
+
+16.  db.orders.find({ createdTs: {$gte: new Date('2025-01-01'), $lte:  new Date('2026-01-01')}})
+
+17. db.orders.find({status: 'Shipped'})
+
+18. db.orders.aggregate([{ $match: { orderTotalPrice: { $gt: 1000}}}, {$group: {_id: "$_id", orderTotalPrice: {$first: "$orderTotalPrice"}}}])
+
+19. db.orders.find({'shippingDetails.email':'customer@example.com'})
+
+20. db.orders.countDocuments()
+
+21. db.orders.aggregate([{ $group: {_id: null, orderTotalValue: { $sum: '$orderTotalPrice'}}}])
+
+22. db.orders.aggregate([{ $group: {_id: null, orderAverageValue: { $avg: '$orderTotalPrice'}}}])
+
+23. db.orders.aggregate([{$group: {_id: "$status", count: {$sum: 1}}}])
+
+24. db.users.aggregate([{$lookup: {from: "orders", localField: "_id", foreignField:"userId", as: "user_orders"}}, {$unwind: "$user_orders"}, {$group: {_id: "$_id", totalOrderValue: {$sum: "$user_orders.orderTotalPrice"}}} ])
+
+25. db.orders.aggregate([ {$unwind: '$products'}, {$addFields: {products: {$objectToArray: '$products'}}}, {$unwind: '$products'}, {$group: {'_id': '$products.v._id', name: {$first: '$products.v._name'}, image: {$first: '$products.v.image'}, totalUnitsSold: {$sum: '$products.v.units'}}}, {$sort: {totalUnitsSold: -1}}, {$limit: 3} ])

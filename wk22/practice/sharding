@@ -2,10 +2,19 @@ MongoDB uses Sharding to meet the growing demands for data storage on multiple m
 
 In sharding process, horizontal scaling, also called scaling out, is a method that is used to address the need for increased capacity and performance.
 
+replica set is a cluster of MongoDB servers that store the same data set.
+
+a sharded cluster is a cluster of MongoDB servers that store a large amount of data across multiple shards
+
+a shard is a set of servers that store a subset of the total data set based on a shard key
+
+a shard key is a set of fields that MongoDB uses to determine which shard should store a particular piece of data
+
 
 
 benefits include:
-  partition the data
-  increase capacity
-  increase write speed
+  scalability: partition the data across multiple servers( horizontal scaling)
+  improved performance
+  high availability
+  fault tolerance
   auto balancing

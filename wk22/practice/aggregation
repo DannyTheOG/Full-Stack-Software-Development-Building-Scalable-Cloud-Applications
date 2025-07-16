@@ -5,3 +5,89 @@ Each stage performs an operation on the input documents. For example, a stage ca
 The documents that are output from a stage are passed to the next stage.
 
 An aggregation pipeline can return results for groups of documents. For example, return the total, average, maximum, and minimum values
+
+
+Common Aggregation Stages and Operators
+
+1.  $match : filter documents based on conditions. (SQL: where condition)
+
+    e.g. orderTotalPrice greater than 500 in orders collection
+      db.orders.aggregate([
+        {$match: {
+          orderTotalPrice: {
+            $gt: 500
+          }
+        }}
+      ])
+
+
+2.  $group : group documents by a field and performs aggregation operations like $sum, $avg, $max, etc. (SQL: group by condition)
+  
+    e.g. group products with the same categoryId and find their total counts
+      db.products.aggregate([
+        {
+          $group: {
+            _id: "$categoryId",
+            totalProducts: {
+              $count: {}
+            }
+          }
+        }
+      ])
+
+
+3.  $project : selects specific fields and optionally renames them. (SQL: select specific columns from a table)
+
+    e.g. select name, description and price from each product document
+      db.products.aggregate([
+        {
+          $project: {
+            _id: 0,
+            name: 1,
+            description: 1,
+            price: 1
+          }
+        }
+      ])
+
+
+4.  $sort : sorts document by a specific field. (SQL: sort specific columns in a certain order)
+  
+    e.g. sort fullname in users collection
+      db.users.aggregate([
+        {
+          $sort: {
+            fullname: 1   // -1 for descending order
+          }
+        }
+      ])
+
+
+5.  $limit : restricts result output to a specified number of documents. (SQL: limit)
+  
+    e.g. first 10 documents in users collection
+      db.users.aggregate([
+        {
+          $limit: 10
+        }
+      ])
+
+
+6.  $skip : skips a number of documents in the result output. (SQL: limit)
+  
+    e.g. skip first 2 documents in users collection
+      db.users.aggregate([
+        {
+          $skip: 2
+        }
+      ])
+
+
+7.  $unwind : deconstructs an array into multiple documents, one per element.
+  
+    e.g. analyze post tags individually for building a tag cloud or finding popular tags.
+      db.posts.aggregate([
+        {
+          $unwind: "$tags"
+        }
+      ])

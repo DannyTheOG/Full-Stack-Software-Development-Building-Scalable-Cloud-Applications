@@ -6,3 +6,38 @@ While replication provides many benefits, there's also some concerns to keep in 
 
 The primary node is responsible for write operations, while the secondary nodes are read-only replicas that provide data redundancy and assist with read scaling.
 
+
+Replica Set Members
+
+Primary
+  handles all writes
+  only one primary node per replica set
+
+
+Secondary
+  replicates data from the primary
+  can serve read operations
+
+
+Arbiter
+  a member of the replica set that does not store a copy of the data
+  participates in election of a new primary if current primary fails
+
+
+Delayed Member (secondary)
+  lags behind the primary by a specific amount of time
+  can provide backup in case of accident data deletion/corruption
+
+
+Hidden Member (secondary)
+  does not appear in the replica set status
+  used for running analytics queries/performing backups
+
+
+
+Replication Process
+
+1. Write operation
+2. Replication to secondary servers
+3. Confirm replication to primary server ( replSetGetStatus )
+4. Election process (if primary fails)
