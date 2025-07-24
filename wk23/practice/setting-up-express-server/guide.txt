@@ -1,0 +1,33 @@
+create your express project repo
+
+open the terminal from the repo location
+
+run 'npm init -y'
+
+create your 'src' repo in your project repo and create your 'index.js' file in 'src'
+
+update the 'main' property in the package.json to "src/index.js"
+
+add a 'start' property to the scripts in package.json and set it to "node ."
+
+run 'npm i express' to install the express web framework
+
+run 'npm start' to start your express server
+
+
+
+
+
+
+
+* adding nodemon for automatic updates
+
+run 'npm i --save-dev nodemon' to add 'nodemon' to your devDependencies
+
+nodemon allow the server to restart automatically after any update.
+
+update the 'start' property in the scripts in package.json to "nodemon ."
+
+add a 'start:production' property to the scripts in package.json and set it to "node ."
+
+run 'npm start' to start your updated express server

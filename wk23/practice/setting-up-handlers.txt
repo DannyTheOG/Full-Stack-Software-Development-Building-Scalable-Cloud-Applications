@@ -1,0 +1,6 @@
+app.get( path, handlerFunction ) e.g. app.get( '/users', (req, res) => {} )
+
+app.post( path, handlerFunction ) e.g. app.post( '/addUser', (req, res) => {} )
+
+
+in general, app.*( path, handlerFunction ) where * represents any HTTP method.

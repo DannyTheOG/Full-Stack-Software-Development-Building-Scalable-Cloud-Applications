@@ -1,0 +1,27 @@
+JWT serves as an open standard, outlined in RFC 7519, offering a secure and self-contained method for exchanging information between entities in the form of a JSON object
+
+This data can be relied upon and authenticated due to its digital signature.
+
+JWTs can be signed either through a secret using the HMAC algorithm or with a public/private key pair using RSA or ECDSA
+
+it consists of three parts:
+    header: a JSON object that contains information about the type of token and algorithm used for signing/encrypting the token
+
+    payload: another JSON object with claims about the user (e.g., user ID, username, expiration time)
+
+    signature: the encoded header, the encoded payload, and a secret key. It then applies the specified signing algorithm to create the signature
+
+JWT = header(base64-url encoded) + payload + signature;
+
+
+advantages:
+  stateless authentication:  allow for stateless authentication, eliminating the need for servers to store session information and enhancing scalability
+
+  efficient cross-domain authentication:  transmitted between different domains, making them suitable for microservices architectures and third-party service integrations
+
+  versatile information exchange: efficient way to transmit user information, roles, and permissions securely
+
+  decentralized identity management: conveying user identity and permissions without relying on a centralized authentication server
+
+
+try on 'www.jwt.io'

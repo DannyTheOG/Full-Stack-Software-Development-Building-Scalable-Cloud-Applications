@@ -1,0 +1,12 @@
+static files may be many in number - it is impractical to set up individual routes for them
+
+express static file server is a middleware that can check if the incoming URL matches any path within
+a set of folders that have static assets
+
+if a matching path is found, it serves the file as response, else it does nothing
+
+instead of creating individual routes for each static asset, after installing the static assets and copying them into the public directory
+
+import 'path' library to the main project index.js file
+
+add app.use( express.static( path.join( process.cwd(), 'public') ) )

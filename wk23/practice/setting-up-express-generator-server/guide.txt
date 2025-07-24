@@ -1,0 +1,26 @@
+to create your express project repo using express-generator
+
+open the terminal from location where you want the project to be created
+
+run 'npx express-generator project_name'
+
+run 'npm i' to install dependency packages
+
+run 'npm start' to start your express server
+
+check 'bin/www' for the port of your server
+
+
+
+
+* adding nodemon for automatic updates
+
+run 'npm i --save-dev nodemon' to add 'nodemon' to your devDependencies
+
+nodemon allow the server to restart automatically after any update.
+
+update the 'start' property in the scripts in package.json to "nodemon ."
+
+add a 'start:production' property to the scripts in package.json and set it to "node ."
+
+run 'npm start' to start your updated express server

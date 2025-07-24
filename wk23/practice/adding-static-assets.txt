@@ -1,0 +1,17 @@
+to adding static assets such as font awesome and bootstrap to your nodeJs project;
+
+run 'npm i bootstrap @fortawesome/fontawesome-free' to add the libraries to the node modules
+
+run 'npm i --save-dev cpx' to add a tool to copy files across platforms ( windows, mac, linux )
+
+add ' cpx \"node_modules/{bootstrap/dist,@fortawesome/fontawesome-free{css,svgs,webfonts}}/**/* \" public ' to the 'copy' script to your package.json
+
+  the script copies 'bootstrap/dist' and '@fortawesome/fontawesome-free{css, svgs, webfonts}' to the public directory in your project
+
+  **/* - recursive copy : copies all directories within the directory being copied
+
+run 'npm run copy' to execute the 'copy' script
+
+add '<link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">' tag to the HTML files (in the head tag)
+
+set up the controller and route to the bootstrap files
