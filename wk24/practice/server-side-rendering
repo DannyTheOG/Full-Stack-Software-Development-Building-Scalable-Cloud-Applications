@@ -1,0 +1,10 @@
+ssr is a technique used in web development to improve the initial loading performance and search engine optimization (SEO) of web applications
+
+multiple HTML pages for multiple views
+
+when a link is clicked, page is fetched from server and it loads
+
+page is rendered using data on the server side
+
+good for content heavy websites with less JS logic(less interaction) e.g. wikipedia
+

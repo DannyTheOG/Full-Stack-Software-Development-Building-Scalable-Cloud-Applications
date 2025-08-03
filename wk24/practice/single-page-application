@@ -1,0 +1,8 @@
+single page only
+
+views load by manipulating DOM. the view is constructed in the browser using React, Angular, etc.
+
+communication with the server is usually for data only, thus we need to build only an API server
+
+good for interactive websites that need to be quick to respond to the user, fast to navigate, etc
+

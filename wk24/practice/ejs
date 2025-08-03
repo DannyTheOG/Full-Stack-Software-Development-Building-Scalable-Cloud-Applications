@@ -1,0 +1,9 @@
+https://ejs.co/
+
+ejs - embedded javascript
+
+combines HTML and JS syntax for templating
+
+supports partials for repeated HTML content
+
+it caches generated JS functions for faster rendering

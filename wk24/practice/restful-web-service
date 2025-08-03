@@ -1,0 +1,24 @@
+a web service is an interface that web application client and server used for exchanging application state
+
+REST - REpresentational State Transfer
+
+communication is over any stateless protocol, usually HTTP
+
+stateless means one message has no bearing on the next one
+
+REST promotes loose coupling of client with server, making changes on either end easy
+
+central concept in REST is a resource
+
+
+
+
+resource: an entity in an application e.g. restaurant, a list of restaurants
+          uniquely addressable using a URL ( e.g. http://localhost:3000/api/v1/restaurants )
+
+
+
+
+representation of a resource:
+
+a resource state is the data associated with it. it is transferred to the client in some format. e.g. JSON, XML

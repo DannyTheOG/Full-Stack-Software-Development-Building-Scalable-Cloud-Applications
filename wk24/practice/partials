@@ -1,0 +1,14 @@
+HTML files have parts which they share - head section, navigation menu etc.
+
+to reduce repetition of such code and create a common piece of such HTML, that other files can include we have partials
+
+this also makes it a simple affair to make changes to navigation menu, etc.
+
+
+
+making use of partials:
+
+create 3 EJS files with head section, navigation menu, and footer section
+
+replace the head, menu and footer parts, by including the partials.
+  syntax: <%- include( partialPath, data ) -%>

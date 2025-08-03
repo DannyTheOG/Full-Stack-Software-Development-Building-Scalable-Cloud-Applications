@@ -1,0 +1,20 @@
+run 'npm i mongoose'
+
+write a connection script and use this below connection string
+  mongoose.connect( connectionString )
+
+
+
+steps to create a collection for an entity
+
+  create a schema
+  create a model using the schema, and register it with Mongoose
+
+
+schema: defines the shape of the entity instance - e.g. what fields a restaurant document contain
+        it includes fields for a document of the entity, the data type of the fields, validation if any
+
+
+
+model: a class created using the corresponding schema
+       has methods to make DB queries - e.g. find list of restaurants, add a new restaurant etc.

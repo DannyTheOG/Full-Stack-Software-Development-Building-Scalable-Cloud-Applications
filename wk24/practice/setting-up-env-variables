@@ -1,0 +1,15 @@
+environment variables help set-up variables in code that varies from one environment to the other( dev, staging, production )
+
+these include port number, db connection parameters
+
+environment variables are made available in Node script on 'process.env'
+
+setting up environment variable on development machines is usually an overkill
+
+the 'dotenv' package helps set up variable directly on 'process.env'
+
+the .env package facilitates the loading of environment variables from a .env file into the process.env object.
+
+run 'npm i dotenv' to install the dotenv package
+
+require('dotenv').config() is used to load and configure the environment variables defined in the .env file into the process.env object.

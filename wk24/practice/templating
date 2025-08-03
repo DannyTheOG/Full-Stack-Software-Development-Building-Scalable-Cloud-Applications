@@ -1,0 +1,7 @@
+HTML pages often are dynamic
+
+the data obtained from a data source/database is to be weaved into an HTML page
+
+templating engines/libraries help achieve this by providing a way to intersperse dynamic data with HTML structure
+
+different options in Express - EJS, Handlebars, Pug

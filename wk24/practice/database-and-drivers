@@ -1,0 +1,15 @@
+we make DB queries from our application to store and retrieve data
+
+drivers are packages that help us make these queries from the application
+
+drivers convert method calls to DB requests( in appropriate DB protocol ) and send them to the DB server
+
+once the response comes from the DB server, they return it to the code calling the method/callback function
+
+MongoDB provides an official driver for Node.js
+
+we shall use 'Mongoose' that wraps over the MongoDB driver for Node.js and provides many useful features ( schema validation, etc )
+
+'Mongoose' is a popular package in Express.js that provides an Object Data Modeling layer for MongoDB, which simplifies all the interactions with MongoDB databases by providing a structured way to define models, maintain data, and perform database operations.
+
+visit: https://mongoosejs.com/docs/guide.html
