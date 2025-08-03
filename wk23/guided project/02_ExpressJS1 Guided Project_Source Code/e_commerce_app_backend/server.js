@@ -1,4 +1,6 @@
 /* WRITE YOUR CODE HERE */
+require( 'dotenv' ).config();
+
 const express = require( 'express' );
 const cors = require( 'cors' );
 const requestParser = require( 'body-parser' );

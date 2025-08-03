@@ -1,10 +1,13 @@
+require( 'dotenv' ).config();
+
 const mongoose = require("mongoose");
 const fs = require("fs");
 
 // Connect to MongoDB
 mongoose
   .connect(
-    "mongodb+srv://DannyTheOG:P%40%24s1234@cluster0.xivlcdu.mongodb.net/food-order-app",
+    // "mongodb+srv://DannyTheOG:P%40%24s1234@cluster0.xivlcdu.mongodb.net/food-order-app",
+    "mongodb+srv://"+ process.env.DB_USER +":"+ process.env.DB_PASS +"@cluster0.xivlcdu.mongodb.net/"+ process.env.DB_NAME,
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,

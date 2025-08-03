@@ -4,7 +4,10 @@ const fs = require("fs");
 // Connect to MongoDB
 // password = "P@$s1234" // used percentage encoding for the special characters in the connection string. @ = %40 ,  $ = 24
 // dbName = ecommerce-app
-mongoose.connect("mongodb+srv://DannyTheOG:P%40%24s1234@cluster0.xivlcdu.mongodb.net/ecommerce-app", {
+mongoose.connect(
+  // "mongodb+srv://DannyTheOG:P%40%24s1234@cluster0.xivlcdu.mongodb.net/ecommerce-app",
+  "mongodb+srv://"+ process.env.DB_USER +":"+ process.env.DB_PASS +"@cluster0.xivlcdu.mongodb.net/"+ process.env.DB_NAME, 
+  {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
