@@ -1,0 +1,35 @@
+a unit is the smallest testable part of the code, e.g. function or class
+
+ensures accuracy and early bug detection
+
+addressed multiple error scenarios and edge cases.
+
+follows the TDD( Test Driven Development) and BDD( Behavior-Driven Development) approach
+
+pragmatic test - taking a practical/flexible approach to testing to ensure that software meets its objectives and provides output to users
+
+test case is a detailed set of instructions that includes:
+  Test Case ID,
+  Test Case Name/Title,
+  Test Objective,
+  Preconditions,
+  Inputs,
+  Expected Results,
+  Test Steps,
+  Actual Results,
+  Pass/Fail Criteria and 
+  Status of the test
+
+
+software team = design + product + engineer
+
+SRS - software requirements specification
+  a document that outlines the functional and non-functional requirements of the software
+
+
+
+benefits of unit testing
+  early detection of bugs and problems during development
+  code refactoring facilitates code improvement without worrying about breaking existing functionalities
+  provides confidence that individual units work as expected, contributing to a stable and robust application
+  acts as living documentation that demonstrates how code is expected to be used

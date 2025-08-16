@@ -1,0 +1,7 @@
+a popular Nodejs library for testing API endpoints and HTTP interactions
+
+it is built on top of superagent, an HTTP request library
+
+it is used with JS frameworks like Mocha and Jest
+
+it can also be used as a standalone testing library

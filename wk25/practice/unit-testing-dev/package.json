@@ -1,0 +1,17 @@
+{
+  "name": "unit-testing-dev",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "npx mocha test/app.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "chai": "^5.2.1",
+    "mocha": "^11.7.1"
+  }
+}

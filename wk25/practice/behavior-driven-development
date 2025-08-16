@@ -1,0 +1,20 @@
+BDD is the method that extends TDD principles to focus on the desired behavior of the software from the user's perspective
+
+emphasizes collaboration b/n stakeholders, devs and testers to define/understand the expected behavior of the system
+
+scenarios are written in a human readable format which makes requirements more explicit and less ambiguous
+
+'gherkinis' is a specific language used in BDD and test automation tools
+  follow a 'Given When Then' structure
+
+
+
+BDD process
+  discovering requirements
+  writing scenarios
+  automating scenarios
+  executing and verifying
+  feedback and refinement
+
+
+cucumber - testing framework for BDD and acceptance tesing

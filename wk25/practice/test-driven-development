@@ -1,0 +1,13 @@
+writing test before implementing the actual code
+
+emphasizes writing test that define the desired behavior of the code
+
+encourages writing clean and well structured code from the onset
+
+catching and fixing issues early reduces debugging time later on ( fast development)
+
+red-green-refactor
+
+red - write a failing test
+green - write the minimum code to make the test pass
+refactor - improve the code without changing its behavior

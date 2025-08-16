@@ -1,0 +1,23 @@
+chai assertion library: https://www.chaijs.com/api/bdd
+
+chai's extensibility allows you to create custom assertions and plugins tailored to your project's specific needs.
+
+you can define your custom assertions using chai's API
+
+chai has a vibrant ecosystem of plugins that extend its functionality.
+
+these plugins cover various use cases, e.g. 
+  HTTP assertions, 
+  asynchronous testing,
+  assertion extensions
+
+
+should and expect
+  BDD provides an easy and readable language style via should and expect
+
+
+assert
+  TDD provides a comparatively classical approach using assert
+
+
+chai supports method chaining, allowing you to make multiple assertions in a single statement for more concise test code.

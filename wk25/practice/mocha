@@ -1,0 +1,45 @@
+popular JS framework, used for testing
+
+runs on NodeJS server and browsers
+
+runs test serially( one after the other)
+
+gives flexible and accurate reports about the test results
+
+highly customizable
+
+supports multiple ways to check the results, e.g. chai
+
+you can use mocha with other libraries and tools like Supertest to thoroughly test your API implementations, even if it doesn't have any facilities for testing on its own.
+
+
+
+describe(): organize test cases into test suites or groups
+
+it(): define individual test cases with assertions inside describe()
+
+
+
+
+
+hooks are unique mocha functions that let you create preconditions and carry out cleanup operations before and after test cases.
+
+
+in mocha, you can skip specific test cases or entire test suites using the 'it.skip() or describe.skip()'.
+
+this means mocha will not execute them when running the tests
+
+
+
+
+/**
+ * Mocha Features
+ * 1. Nested Describe Statements (or use context())
+ * 2. Testing Async Code: https://mochajs.org/#hooks
+ * 3. Hooks: https://mochajs.org/#hooks
+ * 4. Configuration
+ *  a. Timeouts
+ *  b. Reporting "Slow" tests
+ *  c. Parallelism
+ * 5. Pending Tests: https://mochajs.org/#pending-tests
+ */
